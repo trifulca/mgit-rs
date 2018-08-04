@@ -4,4 +4,5 @@ version = "0.1.0"
 authors = ["hugoruscitti", "nachopro"]
 
 [dependencies]
+cargo-watch = "7.0.1"
 glob = "0.2.11"
