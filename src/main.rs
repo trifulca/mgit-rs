@@ -27,10 +27,7 @@ fn repos_git(path: &str) -> () {
 
     for entry in glob(path).unwrap() {
         match entry {
-            Ok(path) => println!("{:?}", path.display()),
-
-            // if the path matched but was unreadable,
-            // thereby preventing its contents from matching
+            Ok(path) => println!("{:?}", path.parent().unwrap()),
             Err(e) => println!("{:?}", e),
         }
     }
